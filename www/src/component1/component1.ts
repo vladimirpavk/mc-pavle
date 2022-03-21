@@ -5,7 +5,7 @@ export default class Component1{
         public nickName: string
     ){}
 
-    public sayName() : void{
-        console.log(this.name);
+    public sayName() : string{
+        return this.name+'*';
     }
 }
