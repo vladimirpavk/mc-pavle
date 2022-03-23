@@ -4,9 +4,11 @@
   "description": "\"#Pavle - Minecraft\"",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server",
+    "start": "concurrently npm:watch:*",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "watch:server": "lite-server",
+    "watch:ts": "tsc --watch",
+    "watch:build": "webpack"
   },
   "repository": {
     "type": "git",
