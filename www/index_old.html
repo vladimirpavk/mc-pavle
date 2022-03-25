@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My minecraft maps - Pavle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+</head>
+<body>
+    <div>
+        <p id='title'>This is Pavle's dynamic minecraft web page</p>
+    </div>
+
+    <script>
+        window.onload = ()=>{
+            import('./bundle/bundle.js').then(
+                (m)=>{
+                    console.log('Bundle loaded..bundle.js');
+                }
+            )
+        }
+    </script>
+</body>
+</html>
